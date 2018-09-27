@@ -19,7 +19,7 @@ export default class Weather extends React.Component {
       <View style={styles.container}>
         <ImageBackground source={require('../bg.jpeg')} style={styles.backdrop}>
           <View style={styles.flexbox}>
-            <Text>Zip code is {this.props.zipCode}.</Text>
+            <Text style = {{color: 'white',fontSize:30}}>Zip code is {this.props.zipCode}.</Text>
             <Forecast {...this.state.forecast} />
           </View>
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     
   },
 });

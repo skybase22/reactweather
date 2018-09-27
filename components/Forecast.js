@@ -5,10 +5,10 @@ export default class Forecast extends React.Component {
     render() {
         return (
             <View>
-                <Text>{this.props.main}</Text>
-                <Text>{this.props.description}</Text>
-                <Text>{this.props.temp}</Text>
-                <Text>°C</Text>
+                <Text style = {{color: 'white',fontSize:50}}>{this.props.main}</Text>
+                <Text style = {{color: 'white',fontSize:50}}>{this.props.description}</Text>
+                <Text style = {{color: 'white',fontSize:50}}>{this.props.temp}</Text>
+                <Text style = {{color: 'white',fontSize:40}}>°C</Text>
             </View>
         );
     }
