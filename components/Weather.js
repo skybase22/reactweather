@@ -14,6 +14,7 @@ export default class Weather extends React.Component {
   doIt = () => {
     console.log("Hello from console")
   }
+  
   render() {
     return (
       <View style={styles.container}>
