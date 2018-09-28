@@ -6,7 +6,13 @@ const availableZipItems = [
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
     { place: 'Chonburi', code: '20000' },
+    { place: 'Nakhon Si Thammarat', code: '80110' },
+    { place: 'Phuket', code: '83120' },
+    { place: 'Krabi', code: '85700' },
+    { place: 'Phangnga', code: '81400' },
+    { place: 'Surat Thani', code: '88010' },
 ]
+
 const ZipItem = ({ place, code, navigate }) => (
     <TouchableHighlight onPress={() => navigate('Weather', { zipCode: code })}>
     <View style={styles.zipItem}>

@@ -43,7 +43,7 @@ componentDidUpdate = (prevProps) => {
   render() {
     return (
       <View style={styles.container}>
-        <ImageBackground source={require('../bg.jpeg')} style={styles.backdrop}>
+        <ImageBackground source={require('../8.jpg')} style={styles.backdrop}>
           <View style={styles.flexbox}>
             <Text style={styles.style1}>Zip code is {this.props.zipCode}.</Text>
             <Forecast {...this.state.forecast} />
