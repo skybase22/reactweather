@@ -6,7 +6,7 @@ export default class Weather extends React.Component {
     super(props);
     this.state = {
       forecast: {
-        main: '-', description: '-', temp: 0
+        zipcode: '', main: '-', description: '-', temp: 0
       }
     }
 
@@ -14,6 +14,25 @@ export default class Weather extends React.Component {
   doIt = () => {
     console.log("Hello from console")
   }
+
+  fetchData = () => {
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=90110,th&units=metric&APPID=6e22eda0422b463a1a0c4e624e7af0e2`)
+        .then((response) => response.json())
+        .then((json) => {
+            this.setState(
+                {
+                    forecast: {
+                        main: json.weather[0].main,
+                        description: json.weather[0].description,
+                        temp: json.main.temp
+                    }
+                });
+        })
+        .catch((error) => {
+            console.warn(error);
+        });
+}
+componentDidMount = () => this.fetchData()
   
   render() {
     return (
@@ -47,6 +66,7 @@ const styles = StyleSheet.create({
   {
     color:'white',
     fontSize:25,
+    textAlign:'center',
     
   }
 });
