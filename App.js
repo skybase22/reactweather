@@ -8,6 +8,7 @@ import { createStackNavigator } from 'react-navigation';
   },
   {
     initialRouteName: 'Weather',
+    initialRouteParams: {zipCode: '90110'}
   })
 export default class App extends React.Component {
  
