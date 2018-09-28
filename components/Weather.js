@@ -56,11 +56,11 @@ const styles = StyleSheet.create({
   {
     flexDirection: 'column',
     flex:0.5,
-    justifyContent: 'center',
     alignItems: 'center',   
     height: 360,
     backgroundColor: 'black',
     opacity: 0.5,
+    justifyContent:'space-evenly',
   },
   style1:
   {

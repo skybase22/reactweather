@@ -19,10 +19,13 @@ export default class Forecast extends React.Component {
     } 
 }
 const styles = StyleSheet.create({
+    
     style1:
     {
       color:'white',
       fontSize:25,
       textAlign:'center',
+      margin:20,
+      
     }
   });
